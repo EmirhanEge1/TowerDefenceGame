@@ -5141,14 +5141,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  fireRate: 1
+  fireRate: 0.5
   range: 20
+  src: {fileID: 0}
+  sfx1: {fileID: 0}
   enemyTag: Enemy
   RotatePart: {fileID: 8977568663471533034}
   turnSpeed: 10
   bulletPrefab: {fileID: 0}
   firePoint: {fileID: 5843014857874800662}
-  laserDamage: 30
+  laserDamage: 15
   useLaser: 1
   lineRenderer: {fileID: 4016886098302658405}
   laserEffect: {fileID: 1469594433}
