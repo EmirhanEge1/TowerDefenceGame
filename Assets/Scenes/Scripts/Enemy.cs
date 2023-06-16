@@ -16,7 +16,8 @@ public class Enemy : MonoBehaviour
     private int wavepointIndex = 0;
     private Enemy enemy;
     private int pathIndex;
-
+    public float healthRegenRate = 0f; // Health regenerated per second
+    private float lastRegenTime;
     private bool Dead = false;
 
     private Transform[] path;
@@ -51,6 +52,8 @@ public class Enemy : MonoBehaviour
         }
 
         enemy.speed = enemy.startSpeed;
+        RegenerateHealth();
+
     }
 
     public void TakeDamage(float amount)
@@ -65,6 +68,16 @@ public class Enemy : MonoBehaviour
     public void Slow(float slowRate)
     {
         speed = startSpeed * (1f - slowRate);
+    }
+
+    void RegenerateHealth()
+    {
+        if (Time.time >= lastRegenTime + 1f && health > 0 && health < 100)
+        {
+            health += healthRegenRate;
+            if (health > 100) health = 100;
+            lastRegenTime = Time.time;
+        }
     }
 
     void GetNextWaypoint()

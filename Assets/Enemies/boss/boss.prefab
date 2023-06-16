@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1609938712669948652}
   - component: {fileID: 7255330226230941862}
   - component: {fileID: -6179683587297788030}
-  - component: {fileID: 2421147216635582245}
   m_Layer: 0
   m_Name: boss
   m_TagString: Enemy
@@ -112,19 +111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 156114, guid: 728e36f76e1fd344bb4a5cc8b7aea11f, type: 3}
-  startSpeed: 3
+  startSpeed: 5
   speed: 10
-  health: 1000
+  health: 3000
   moneyGet: 500
---- !u!114 &2421147216635582245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2230160816758753629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 075694b38a634a24eaa0aa71918bd88d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  healthRegenRate: 0

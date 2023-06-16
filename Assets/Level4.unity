@@ -14541,13 +14541,13 @@ MonoBehaviour:
     rate: 1
   - enemy: {fileID: 2230160816758753629, guid: cb0832d8ff883fa45a6b45b38bfb90c7, type: 3}
     count: 25
-    rate: 0.9
+    rate: 3
   - enemy: {fileID: 2230160816758753629, guid: 765480cf7c283e74c8fd10a54757dce1, type: 3}
     count: 25
     rate: 0.6
   - enemy: {fileID: 2230160816758753629, guid: 01fb80fe02e8ded4eb94a27be8a10edd, type: 3}
-    count: 1
-    rate: 1
+    count: 2
+    rate: 0.2
   timeBetweenWaves: 5
   spawnPoint: {fileID: 1421020723}
   waveCountdownText: {fileID: 871535044}

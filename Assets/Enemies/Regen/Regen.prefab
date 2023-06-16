@@ -113,7 +113,6 @@ MonoBehaviour:
   deathEffect: {fileID: 156114, guid: 728e36f76e1fd344bb4a5cc8b7aea11f, type: 3}
   startSpeed: 12
   speed: 10
-  health: 120
+  health: 140
   moneyGet: 55
-  maxHealth: 120
-  regenRate: 10
+  healthRegenRate: 10
